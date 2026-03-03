@@ -4,7 +4,12 @@ using System.Text;
 
 namespace Hospital.Domain.Interfaces
 {
-    internal class IRepository
+    public interface IRepository<T> where T : class
     {
+        void Add(T entity);
+        IEnumerable<T> GetAll();
+        T GetById(int id);
+        void Update(T entity);
+        void Delete(int id);
     }
 }

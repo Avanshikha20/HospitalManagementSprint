@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hospital.Domain.Exception
+namespace Hospital.Infrastructure.Repositories
 {
-    internal class DoctorNotFoundException
+    internal class DoctorRepoMemory
     {
     }
 }
